@@ -1,0 +1,132 @@
+<!-- 
+      PROFILE PAGE, This page is static
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edit Profile</title>
+<style>
+
+/* css class for the edit profile generated errors */
+.profilepress-edit-profile-status {
+  width: 400px;
+  text-align: center;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: medium none;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.4;
+  padding: 8px 5px;
+  margin: auto;
+}
+
+.memo-edprofile-success {
+  width: 400px;
+  text-align: center;
+  background-color: #2ecc71;
+  color: #ffffff;
+  border: medium none;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.4;
+  padding: 8px 5px;
+  margin: auto;
+}
+
+#sc-edprofile {
+  background: #f0f0f0;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 2%;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+#sc-edprofile h1 {
+  background: #3399cc;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+div#sc-edprofile .sc-container {
+  background: #f0f0f0;
+  padding: 6% 4%;
+}
+
+div#sc-edprofile input[type="email"],
+div#sc-edprofile input[type="text"],
+div#sc-edprofile input[type="password"], div#sc-edprofile select, div#sc-edprofile textarea {
+  width: 92%;
+  background: #fff;
+  margin-bottom: 4%;
+  border: 1px solid #ccc;
+  padding: 4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 95%;
+  color: #555;
+}
+
+div#sc-edprofile select {
+  width: 92%;
+}
+
+div#sc-edprofile textarea {
+  height: 100px;
+}
+
+div#sc-edprofile input[type="submit"] {
+  width: 100%;
+  background: #3399cc;
+  border: 0;
+  padding: 4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: background .3s;
+  -webkit-transition: background .3s;
+}
+
+div#sc-edprofile input[type="submit"]:hover {
+  background: #2288bb;
+}</style></head>
+<body bgcolor="black">
+ <center>
+ <form action="http://localhost:8080/social_network/Registration" method="post"></form>
+<div id="sc-edprofile">
+  <h1>Edit Profile Form</h1>
+  <div class="sc-container">
+    <a href="file:///C:">
+    <input name="img" src="default.jpg" style="width:142px;height:142px;border:0;"></a>
+    <input name="username" type="text" placeholder="Username" />
+    <input name="email "type="text" placeholder="Email Address" />
+    <input name="pswd" type="password" placeholder="Password" />
+    <input name="dob" type="text" placeholder="mm-dd-yyyy" />
+    <input name="firstname" type="text" placeholder="First Name" />
+    <input name="lastname" type="text" placeholder="Last Name" />
+    <input name="mno" type="text" placeholder="Mobile number"/>
+    <textarea name="bio" placeholder="Bio" /></textarea>
+    <select>
+      <option value="1">Male</option>
+      <option value="2">Female</option>
+    </select>
+    <textarea name="skills" placeholder="Professional skills" /></textarea>
+    <input name="fbid" type="text" placeholder="Facebook Profile URL" />
+    <input name="twitid" type="text" placeholder="Twitter Profile URL" />
+    <input name="gid" type="text" placeholder="Google+ Profile URL" />
+    <input name="lid" type="text" placeholder="LinkedIn Profile URL" />
+    <input type="submit" value="Save" />
+  </div>
+</div>
+</form> 
+   </center>
+</body>
+</html>
